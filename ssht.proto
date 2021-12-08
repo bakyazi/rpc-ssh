@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "github.com/bakyazi/rpc-ssh/api";
+
+service SshService {
+	rpc RunCommand(SshCommand) returns (SshResponse);
+}
+
+message SshCommand {
+	string username = 1;
+	string host = 2;
+	string command = 5;
+}
+
+message SshResponse {
+	string response = 1;
+}
