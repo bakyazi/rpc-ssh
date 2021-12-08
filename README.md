@@ -6,7 +6,7 @@ In case, you don't want to make your ssh port accessible from outside local netw
 #### Server:
 > ./server 
 #### Client:
-> ./client --server=<server-host> --user=\<ssh-username\> --host=\<ssh-host\> --command=\<command-string\>
+> ./client --server=\<server-host\> --user=\<ssh-username\> --host=\<ssh-host\> --command=\<command-string\>
 
 ### Configuration:
 
